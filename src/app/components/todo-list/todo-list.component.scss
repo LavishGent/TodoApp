@@ -1,0 +1,48 @@
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+    article {
+        margin: 10px auto;
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            outline: none;
+            box-sizing: border-box;
+        }
+    }
+
+    ul {
+        background-color: rgb(240, 240, 240);
+        list-style: none;
+        padding: 0;
+        margin: 10px auto;
+        width: 50vw;
+        text-align: center;
+
+        
+
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1%;
+            margin: 1%;
+        }
+    }
+}
+
+.completed {
+    text-decoration: line-through;
+    color: red;
+}

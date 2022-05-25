@@ -1,0 +1,16 @@
+<section>
+  <article>
+    <input type="text" placeholder="Enter task" [(ngModel)]="todoTitle" (keyup.enter)="addTodo()" />
+  </article>
+  <ul>
+    <li *ngFor="let todo of this.todo.toDoList">
+      <input
+        type="checkbox"
+        [checked]="todo.completed"
+        (change)="todo.completed = !todo.completed"
+      />
+      <p [ngClass]="{'completed' : todo.completed}">{{ todo.title }}</p>
+      <button  (click)="removeTodo(todo)" [disabled]="!todo.completed">Remove</button>
+    </li>
+  </ul>
+</section>
